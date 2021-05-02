@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
+  const toggleMenu = () => isMobile && setMenuOpen((state) => !state);
+  const closeMenu = () => isMobile && setMenuOpen(false);
 
-  const toggleMenu = () => setMenuOpen((state) => !state);
-  const closeMenu = () => setMenuOpen(false);
+  const handleScreenResChange = ({ matches }) => {
+    setIsMobile(matches);
+  };
+  useEffect(() => {
+    const mqList = window.matchMedia('(max-width: 1024px)');
+    mqList.addEventListener('change', handleScreenResChange);
+    return () => {
+      mqList.removeEventListener('change', handleScreenResChange);
+    };
+  }, []);
 
   return (
     <header className="container flex items-center justify-between h-20">
@@ -36,14 +47,18 @@ const Header = () => {
         </svg>
       </button>
       <nav
-        className={`main-menu hidden lg:block ${isMenuOpen ? 'open' : 'close'}`}
-        style={{ display: isMenuOpen ? 'flex' : 'none' }}
+        className={`main-menu hidden lg:block ${
+          isMobile && isMenuOpen ? 'open' : 'close'
+        }`}
+        style={{
+          display: (isMobile && isMenuOpen) || !isMobile ? 'flex' : 'none',
+        }}
       >
         <button
           aria-label="Close Menu"
           className="absolute hidden top-4 right-8"
           onClick={() => toggleMenu()}
-          style={{ display: isMenuOpen ? 'block' : 'none' }}
+          style={{ display: isMobile && isMenuOpen ? 'block' : 'none' }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
