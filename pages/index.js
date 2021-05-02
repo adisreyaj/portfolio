@@ -1,6 +1,5 @@
 import { gql, request } from 'graphql-request';
 import Image from 'next/image';
-import Meta from '../components/Meta';
 import About from '../components/sections/About';
 import Blogs from '../components/sections/Blogs';
 import Career from '../components/sections/Career';
@@ -15,7 +14,6 @@ import { JOBS } from '../data/job';
 export default function Home({ posts, jobs }) {
   return (
     <div className="pt-5 xl:pt-10">
-      <Meta />
       <div className="fixed -right-20 -top-20" style={{ zIndex: -1 }}>
         <Image src="/images/flare.svg" height={800} width={800} alt="flare" />
       </div>

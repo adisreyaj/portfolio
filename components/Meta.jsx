@@ -4,7 +4,6 @@ import React from 'react';
 const Meta = () => {
   return (
     <Head>
-      <html lang="en" />
       <title>Adithya Sreyaj - All things Web | Developer + Designer</title>
       <meta
         name="title"
