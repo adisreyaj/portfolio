@@ -12,9 +12,7 @@ const Meta = () => {
       />
       <meta
         name="description"
-        content="A Full-stack developer working with Web technologies.
-Loves to build highly scalable and maintainable
-web applications and back-ends."
+        content="A Full-stack developer working with Web technologies. Loves to build highly scalable and maintainable web applications and back-ends."
       />
       <link rel="stylesheet" href="/fonts/fonts.css" />
       <link
@@ -47,7 +45,6 @@ web applications and back-ends."
         content="/images/icons/browserconfig.xml"
       />
       <meta name="theme-color" content="#001615" />
-
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://sreyaj.dev" />
       <meta
@@ -56,9 +53,7 @@ web applications and back-ends."
       />
       <meta
         property="og:description"
-        content="A Full-stack developer working with Web technologies.
-Loves to build highly scalable and maintainable
-web applications and back-ends."
+        content="A Full-stack developer working with Web technologies. Loves to build highly scalable and maintainable web applications and back-ends."
       />
       <meta
         property="og:image"
@@ -73,9 +68,7 @@ web applications and back-ends."
       />
       <meta
         property="twitter:description"
-        content="A Full-stack developer working with Web technologies.
-Loves to build highly scalable and maintainable
-web applications and back-ends."
+        content="A Full-stack developer working with Web technologies. Loves to build highly scalable and maintainable web applications and back-ends."
       />
       <meta
         property="twitter:image"

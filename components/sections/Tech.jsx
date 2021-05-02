@@ -24,7 +24,12 @@ const Tech = () => {
         {tech.map((item) => {
           return (
             <article className="tech-card" key={item}>
-              <img src={`/images/tech-stack/${item}.svg`} alt={item} />
+              <img
+                src={`/images/tech-stack/${item}.svg`}
+                alt={item}
+                width="90px"
+                height="90px"
+              />
             </article>
           );
         })}
