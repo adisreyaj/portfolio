@@ -8,11 +8,11 @@ const Blogs = ({ posts }) => {
   return (
     <section className="container site-section" id="blog">
       <SectionHeading heading="Blogs" subheading="posts" />
-      <div className="relative grid gap-6 mt-10 xl:grid-cols-3 2xl:grid-cols-4">
+      <div className="relative grid grid-cols-1 gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {posts.slice(0, 6).map((post) => {
           return (
             <article key={post.cuid} className="blog-card">
-              <header className="relative w-full 2xl:h-40 xl:h-52">
+              <header className="relative w-full h-40 xl:h-52">
                 <Image
                   src={post.coverImage}
                   className="rounded-md"

@@ -8,7 +8,7 @@ const SectionHeading = ({ heading, subheading }) => {
         <img
           src={`/images/${subheading}.svg`}
           height="50px"
-          style={{ height: 50 }}
+          className="h-12 lg:h-14"
         />
       </div>
     </div>
