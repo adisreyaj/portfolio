@@ -13,18 +13,21 @@ const Header = () => {
         />
       </div>
       <nav>
-        <ul className="grid grid-cols-4 gap-10 font-semibold text-white list-none font-heading">
+        <ul className="grid grid-cols-5 gap-10 font-semibold text-white list-none font-heading">
           <li className="text-center uppercase cursor-pointer hover:text-primary">
             Home
           </li>
           <li className="text-center uppercase cursor-pointer hover:text-primary">
-            Projects
+            <a href="#projects">Projects</a>
           </li>
           <li className="text-center uppercase cursor-pointer hover:text-primary">
-            Blog
+            <a href="#about">About</a>
           </li>
           <li className="text-center uppercase cursor-pointer hover:text-primary">
-            Contact
+            <a href="#blog">Blog</a>
+          </li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

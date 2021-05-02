@@ -36,4 +36,18 @@ a {
 body {
   background: linear-gradient(180deg, #001116 0%, #001615 100%);
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+.blog-card {
+  background: hsl(128deg 62% 75% / 4%);
+  box-shadow: 0 8px 32px 0 rgba(12, 240, 73, 0.09);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+  &__content {
+    // padding: 0rem 0.6rem 1rem;
+  }
 }

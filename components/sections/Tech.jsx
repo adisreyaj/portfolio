@@ -20,7 +20,7 @@ const Tech = () => {
   return (
     <section className="container site-section">
       <SectionHeading heading="Tech" subheading="stack" />
-      <div className="flex gap-4 mt-8">
+      <div className="flex flex-wrap gap-12 mt-8">
         {tech.map((item) => {
           return (
             <article key={item}>

@@ -6,20 +6,25 @@ import SectionHeading from '../SectionHeading';
 const Blogs = ({ posts }) => {
   console.log(posts);
   return (
-    <section className="container site-section">
+    <section className="container site-section" id="blog">
       <SectionHeading heading="Blogs" subheading="posts" />
-      <div className="grid gap-6 mt-10 xl:grid-cols-3 2xl:grid-cols-4">
+      <div className="relative grid gap-6 mt-10 xl:grid-cols-3 2xl:grid-cols-4">
         {posts.slice(0, 6).map((post) => {
           return (
-            <article key={post.cuid}>
+            <article key={post.cuid} className="blog-card">
               <header className="relative w-full 2xl:h-40 xl:h-52">
-                <Image src={post.coverImage} layout="fill" objectFit="cover" />
+                <Image
+                  src={post.coverImage}
+                  className="rounded-md"
+                  layout="fill"
+                  objectFit="cover"
+                />
               </header>
-              <div>
+              <div className="blog-card__content">
                 <a href={`https://blog.sreyaj.dev/${post.slug}`} target="blank">
-                  <h4 className="mt-4 font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
+                  <h3 className="mt-4 font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
                     {post.title}
-                  </h4>
+                  </h3>
                 </a>
                 <div className="flex gap-4 py-1">
                   <p className="text-xs">

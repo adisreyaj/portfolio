@@ -3,14 +3,15 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <footer className="container relative flex flex-col items-center justify-center pt-10 pb-6 text-white">
-        <div className="absolute bottom-0" style={{ zIndex: -1 }}>
+      <footer className="container relative flex flex-col items-center justify-center pt-32 pb-6 overflow-hidden text-white">
+        <div className="absolute -bottom-[200px]" style={{ zIndex: -1 }}>
           <img src="/images/flare-bottom.svg" height={800} width={800} />
         </div>
         <div className="flex gap-6 mb-8" style={{ maxWidth: 600 }}>
           <a
-            title="Github"
+            aria-label="Github"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/adisreyaj"
             className="hover:text-primary"
           >
@@ -28,7 +29,8 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            title="Twitter"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
             href="https://twitter.com/AdiSreyaj"
             className="hover:text-primary"
           >
@@ -46,7 +48,8 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            title="LinkedIn"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             href="https://www.linkedin.com/in/adithyasreyaj/"
             className="hover:text-primary"
           >
@@ -66,7 +69,8 @@ const Footer = () => {
             href="https://blog.sreyaj.dev"
             className="hover:text-primary"
             target="_blank"
-            title="Blog"
+            rel="noopener noreferrer"
+            aria-label="Blog"
           >
             <svg
               width="36"
@@ -82,7 +86,8 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            title="Hashnode"
+            rel="noopener noreferrer"
+            aria-label="Hashnode"
             href="https://hashnode.com/@adisreyaj"
             className="hover:text-primary"
           >
@@ -109,6 +114,7 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://dev.to/adisreyaj"
             className="hover:text-primary"
           >
