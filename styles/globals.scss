@@ -54,3 +54,60 @@ body {
 .blog-card {
   padding: 1rem;
 }
+
+.job-card {
+  padding-left: 2rem;
+  &:not(:last-of-type) {
+    @apply pb-10;
+  }
+  &:not(:last-of-type) {
+    header {
+      z-index: 1;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -3px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        z-index: 0;
+        background-color: var(--primary);
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2px;
+      height: 50%;
+      background-color: var(--primary);
+    }
+  }
+  &:not(:first-of-type) {
+    header {
+      z-index: 1;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: -3px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        z-index: 0;
+        background-color: var(--primary);
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      width: 2px;
+      height: 50%;
+      background-color: var(--primary);
+    }
+  }
+}

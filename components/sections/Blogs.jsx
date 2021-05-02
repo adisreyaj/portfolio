@@ -4,7 +4,6 @@ import React from 'react';
 import SectionHeading from '../SectionHeading';
 
 const Blogs = ({ posts }) => {
-  console.log(posts);
   return (
     <section className="container site-section" id="blog">
       <SectionHeading heading="Blogs" subheading="posts" />
