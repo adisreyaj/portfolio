@@ -12,7 +12,7 @@ const Header = () => {
           width={40}
         />
       </div>
-      <nav>
+      <nav className="hidden lg:block">
         <ul className="grid grid-cols-5 gap-10 font-semibold text-white list-none font-heading">
           <li className="text-center uppercase cursor-pointer hover:text-primary">
             Home

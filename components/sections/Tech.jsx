@@ -20,7 +20,7 @@ const Tech = () => {
   return (
     <section className="container site-section">
       <SectionHeading heading="Tech" subheading="stack" />
-      <div className="flex flex-wrap gap-12 mt-8">
+      <div className="flex flex-wrap gap-6 mt-8 lg:gap-12">
         {tech.map((item) => {
           return (
             <article class="tech-card" key={item}>

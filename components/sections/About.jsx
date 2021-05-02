@@ -17,8 +17,8 @@ const About = () => {
           >
             <strong>Hypersonix</strong>
           </a>
-          where I help build the the leading enterprise AI platform for consumer
-          commerce businesses.
+          &nbsp; where I help build the the leading enterprise AI platform for
+          consumer commerce businesses.
         </p>
         <p className="mb-4">
           I am passionate about all things web. I have worked in multiple

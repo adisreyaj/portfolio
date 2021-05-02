@@ -8,15 +8,15 @@ const Contact = () => {
       <div className="mt-10" style={{ maxWidth: 600 }}>
         <p>
           I would love to connect! If it is for an upcoming project or just want
-          to talk #tech, Feel free to reach out me on
+          to talk #tech, Feel free to reach out me on &nbsp;
           <a
             href="mailto:adi.sreyaj@gmail.com"
             rel="noopener noreferrer"
             className="font-semibold underline text-primary"
           >
-            my email
-          </a>{' '}
-          or via
+            my email&nbsp;
+          </a>
+          or via&nbsp;
           <a
             href="https://twitter.com/Adisreyaj"
             target="_blank"
