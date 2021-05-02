@@ -23,8 +23,8 @@ const Tech = () => {
       <div className="flex flex-wrap gap-12 mt-8">
         {tech.map((item) => {
           return (
-            <article key={item}>
-              <img src={`/images/tech/${item}.svg`} alt={item} />
+            <article class="tech-card" key={item}>
+              <img src={`/images/tech-stack/${item}.svg`} alt={item} />
             </article>
           );
         })}
