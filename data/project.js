@@ -3,7 +3,8 @@ export const PROJECTS = [
     title: 'Cartella',
     subtitle: 'The all in one bookmarking tool for developers',
     type: 'WEB',
-    description: `Bookmark your favorite articles, libraries, code snippets, and more. One place to collect them all, so you don't miss them when you need them.`,
+    description: `Bookmark your favorite articles, libraries, code snippets, and more.
+    One place to collect them all, so you don't miss them when you need them. Share it with your friends and colleagues with ease.`,
     technologies: [
       {
         name: 'Angular',
@@ -61,6 +62,6 @@ export const PROJECTS = [
       website: 'https://cartella.sreyaj.dev/',
       npm: null,
     },
-    image: 'cartella',
+    image: 'webitto',
   },
 ];

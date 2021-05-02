@@ -38,7 +38,7 @@ a {
 }
 
 body {
-  background: linear-gradient(180deg, #001116 0%, #001615 100%);
+  @apply bg-dark-gradient;
   background-repeat: no-repeat;
 }
 
@@ -128,6 +128,38 @@ body {
       width: 2px;
       height: 50%;
       background-color: var(--primary);
+    }
+  }
+}
+
+.project-card {
+  &__image {
+    grid-area: 1/7/-1/-1;
+  }
+  &__content {
+    grid-area: 1/1/-1/8;
+  }
+
+  &__description {
+    background: rgba(0, 20, 19, 0.74);
+    box-shadow: 0 8px 32px 0 rgba(12, 240, 73, 0.048);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid hsl(128deg 100% 12%);
+  }
+
+  &:nth-of-type(2n + 1) {
+    .project-card__tech {
+      @apply flex-row-reverse;
+    }
+    .project-card__image {
+      grid-area: 1/1/-1/7;
+    }
+
+    .project-card__content {
+      text-align: right;
+      grid-area: 1/6/-1/-1;
     }
   }
 }

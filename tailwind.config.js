@@ -10,9 +10,12 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--primary)',
+        dark: 'var(--dark)',
+        darker: 'var(--darker)',
       },
       backgroundImage: {
         'primary-gradient': 'var(--primary-gradient)',
+        'dark-gradient': 'var(--dark-gradient)',
       },
     },
     fontFamily: {

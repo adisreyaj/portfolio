@@ -2,33 +2,32 @@ import React from 'react';
 
 const ProjectCard = ({ project }) => {
   return (
-    <article className="glass-card blog-card">
-      <header className="relative w-full h-40 xl:h-52">
-        {/* <Image
-          src={project.image}
-          className="rounded-md"
-          layout="fill"
-          objectFit="cover"
-          alt={project.title}
-        /> */}
-      </header>
-      <div className="blog-card__content">
+    <article className="grid items-center grid-cols-12 project-card">
+      <div className="relative project-card__image">
+        <img
+          src={`/images/projects/${project.image}.png`}
+          className="object-cover"
+        />
+      </div>
+      <div className="z-10 p-4 project-card__content">
         <a href={`https://blog.sreyaj.dev/${project.slug}`} target="blank">
-          <h3 className="mt-4 font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
+          <h3 className="mt-4 text-xl font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
             {project.title}
           </h3>
         </a>
-        <h5 className="">{project.subtitle}</h5>
-        <p className="mt-2 text-sm line-clamp-3">{project.description}</p>
+        <h5 className="mb-6">{project.subtitle}</h5>
+        <div className="p-4 rounded-md bg-dark-gradient project-card__description">
+          <p className="mt-2 text-sm line-clamp-3">{project.description}</p>
+        </div>
         <div className="mt-4">
           <h6 className="font-semibold">Powered by</h6>
-          <div className="flex flex-wrap gap-2 mt-1">
+          <div className="flex flex-wrap gap-2 mt-1 project-card__tech">
             {project.technologies.map((tech) => {
               return (
                 <article>
                   <img
-                    width="50px"
-                    height="50px"
+                    width="40px"
+                    height="40px"
                     src={`/images/tech-stack/${tech.icon}.svg`}
                     alt={tech.name}
                   />
