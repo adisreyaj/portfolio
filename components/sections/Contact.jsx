@@ -23,7 +23,6 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="font-semibold underline text-primary"
           >
-            {' '}
             Twitter
           </a>
         </p>
