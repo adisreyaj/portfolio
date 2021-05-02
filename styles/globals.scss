@@ -42,6 +42,27 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-menu {
+    &.open {
+      display: flex;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      background: #000;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 .blog-card,
 .tech-card {
   background: hsl(128deg 62% 75% / 1%);
