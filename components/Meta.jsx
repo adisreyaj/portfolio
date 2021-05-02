@@ -1,10 +1,9 @@
-import Head from 'next/head';
+import { Head } from 'next/document';
 import React from 'react';
 
 const Meta = () => {
   return (
     <Head>
-      <title>Adithya Sreyaj - All things Web | Developer + Designer</title>
       <meta
         name="title"
         content="Adithya Sreyaj - All things Web | Developer + Designer"
