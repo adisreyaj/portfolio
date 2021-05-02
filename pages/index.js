@@ -1,9 +1,17 @@
+import { gql, request } from 'graphql-request';
 import Head from 'next/head';
 import Image from 'next/image';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
+import About from '../components/sections/About';
+import Blogs from '../components/sections/Blogs';
+import Career from '../components/sections/Career';
+import Contact from '../components/sections/Contact';
+import Footer from '../components/sections/Footer';
+import Header from '../components/sections/Header';
+import Projects from '../components/sections/Projects';
+import Tech from '../components/sections/Tech';
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div className="pt-10">
       <Head>
@@ -16,10 +24,42 @@ export default function Home() {
         <Image src="/images/flare.svg" height={800} width={800} />
       </div>
       <Header />
-      <Hero />
-      <main></main>
-
-      <footer></footer>
+      <main>
+        <Hero />
+        <Projects />
+        <Career />
+        <About />
+        <Tech />
+        <Blogs posts={posts} />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const query = gql`
+    query {
+      user(username: "adisreyaj") {
+        publication {
+          posts(page: 0) {
+            title
+            coverImage
+            slug
+            cuid
+            totalReactions
+            brief
+            dateUpdated
+          }
+        }
+      }
+    }
+  `;
+  const data = await request('https://api.hashnode.com/', query);
+  return {
+    props: {
+      posts: data.user.publication.posts,
+    }, // will be passed to the page component as props
+  };
 }

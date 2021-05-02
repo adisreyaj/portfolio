@@ -14,10 +14,18 @@ const Header = () => {
       </div>
       <nav>
         <ul className="grid grid-cols-4 gap-10 font-semibold text-white list-none font-heading">
-          <li className="text-center uppercase cursor-pointer">Home</li>
-          <li className="text-center uppercase cursor-pointer">Projects</li>
-          <li className="text-center uppercase cursor-pointer">Blog</li>
-          <li className="text-center uppercase cursor-pointer">Contact</li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            Home
+          </li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            Projects
+          </li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            Blog
+          </li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            Contact
+          </li>
         </ul>
       </nav>
     </header>

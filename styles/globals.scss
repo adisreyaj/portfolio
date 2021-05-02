@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './partials/_colors';
+@import './partials/colors';
 @import './partials/layout';
+@import './partials/headings';
+@import './partials/button';
+
 html,
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #fff;
 }
 
 h1,
@@ -32,5 +36,4 @@ a {
 body {
   background: linear-gradient(180deg, #001116 0%, #001615 100%);
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
