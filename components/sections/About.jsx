@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="container site-section" id="about">
       <SectionHeading heading="Know Me" subheading="about" />
-      <div className="mt-10 xl:text-lg" style={{ maxWidth: 600 }}>
+      <div className="mt-10 xl:text-lg">
         <p className="mb-4">
           I work as a <strong>Sr.Front-end Engineer</strong> at{' '}
           <a
