@@ -114,6 +114,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://dev.to/adisreyaj"
             className="hover:text-primary"
+            aria-label="Dev.to"
           >
             <svg
               width="37"

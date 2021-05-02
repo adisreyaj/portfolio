@@ -21,7 +21,7 @@ const Hero = () => {
             back-ends. Loves everything <strong>JavaScript</strong>
           </p>
           <div className="mt-10 xl:mt-16">
-            <a href="" className="button primary">
+            <a href="https://resume.sreyaj.dev" className="button primary">
               Resume
             </a>
           </div>
