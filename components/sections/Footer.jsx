@@ -4,9 +4,6 @@ const Footer = () => {
   return (
     <>
       <footer className="container relative flex flex-col items-center justify-center pt-32 pb-6 overflow-hidden text-white">
-        <div className="absolute -bottom-[200px]" style={{ zIndex: -1 }}>
-          <img src="/images/flare-bottom.svg" height={800} width={800} />
-        </div>
         <div className="flex gap-6 mb-8" style={{ maxWidth: 600 }}>
           <a
             aria-label="Github"

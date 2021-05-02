@@ -23,7 +23,7 @@ export default function Home({ posts }) {
       <div className="fixed -right-20 -top-20" style={{ zIndex: -1 }}>
         <Image src="/images/flare.svg" height={800} width={800} />
       </div>
-      <div className="fixed -left-20 -bottom-20" style={{ zIndex: -1 }}>
+      <div className="fixed -left-20 -bottom-40" style={{ zIndex: -1 }}>
         <Image src="/images/flare-bottom.svg" height={800} width={800} />
       </div>
       <Header />
