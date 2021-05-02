@@ -10,8 +10,9 @@ import Hero from '../components/sections/Hero';
 import Projects from '../components/sections/Projects';
 import Tech from '../components/sections/Tech';
 import { JOBS } from '../data/job';
+import { PROJECTS } from '../data/project';
 
-export default function Home({ posts, jobs }) {
+export default function Home({ posts, jobs, projects }) {
   return (
     <div className="pt-5 xl:pt-10">
       <div className="fixed -right-20 -top-20" style={{ zIndex: -1 }}>
@@ -28,7 +29,7 @@ export default function Home({ posts, jobs }) {
       <Header />
       <main>
         <Hero />
-        <Projects />
+        <Projects projects={projects} />
         <Career jobs={jobs} />
         <About />
         <Tech />
@@ -63,6 +64,7 @@ export async function getStaticProps(context) {
     props: {
       posts: data.user.publication.posts,
       jobs: JOBS,
+      projects: PROJECTS,
     },
   };
 }
