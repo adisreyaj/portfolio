@@ -17,10 +17,15 @@ export default function Home({ posts, jobs }) {
     <div className="pt-5 xl:pt-10">
       <Meta />
       <div className="fixed -right-20 -top-20" style={{ zIndex: -1 }}>
-        <Image src="/images/flare.svg" height={800} width={800} />
+        <Image src="/images/flare.svg" height={800} width={800} alt="flare" />
       </div>
       <div className="fixed -left-20 -bottom-40" style={{ zIndex: -1 }}>
-        <Image src="/images/flare-bottom.svg" height={800} width={800} />
+        <Image
+          src="/images/flare-bottom.svg"
+          height={800}
+          width={800}
+          alt="flare"
+        />
       </div>
       <Header />
       <main>

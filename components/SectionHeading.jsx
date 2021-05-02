@@ -9,6 +9,7 @@ const SectionHeading = ({ heading, subheading }) => {
           src={`/images/${subheading}.svg`}
           height="50px"
           className="h-12 lg:h-14"
+          alt={heading}
         />
       </div>
     </div>

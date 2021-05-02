@@ -17,6 +17,7 @@ const Blogs = ({ posts }) => {
                   className="rounded-md"
                   layout="fill"
                   objectFit="cover"
+                  alt={post.title}
                 />
               </header>
               <div className="blog-card__content">

@@ -10,6 +10,7 @@ const Header = () => {
           className="w-10 h-10 opacity-80"
           height={40}
           width={40}
+          alt="Adithya Sreyaj Logo"
         />
       </div>
       <nav className="hidden lg:block">

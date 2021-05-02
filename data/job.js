@@ -4,7 +4,7 @@ export const JOBS = [
     from: '2020',
     to: 'Present',
     designation: 'Sr.Front-end Engineer',
-    location: 'Bangalore',
+    location: 'Bangalore, IN',
     website: 'https://hypersonix.ai',
     logo: 'hypersonix.svg',
     role:
@@ -15,7 +15,7 @@ export const JOBS = [
     from: '2018',
     to: '2020',
     designation: 'Full-stack Developer',
-    location: 'Bangalore',
+    location: 'Bangalore, IN',
     website: 'https://altorumleren.com',
     logo: 'altorum.svg',
     role:

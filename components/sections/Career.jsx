@@ -23,6 +23,7 @@ const Career = ({ jobs }) => {
                       href={item.website}
                       rel="noopener noreferrer"
                       target="_blank"
+                      aria-label={item.company}
                       className="text-white hover:text-primary"
                     >
                       <svg
@@ -54,6 +55,7 @@ const Career = ({ jobs }) => {
                       href={item.website}
                       rel="noopener noreferrer"
                       target="_blank"
+                      aria-label={item.company}
                       className="text-white hover:text-primary"
                     >
                       <svg
