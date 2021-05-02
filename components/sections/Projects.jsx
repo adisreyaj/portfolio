@@ -3,7 +3,7 @@ import SectionHeading from '../SectionHeading';
 
 const Projects = () => {
   return (
-    <section className="container site-section">
+    <section className="container site-section" id="projects">
       <SectionHeading heading="Projects" subheading="works" />
     </section>
   );

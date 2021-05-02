@@ -14,6 +14,10 @@ body {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -36,4 +40,17 @@ a {
 body {
   background: linear-gradient(180deg, #001116 0%, #001615 100%);
   background-repeat: no-repeat;
+}
+
+.blog-card,
+.tech-card {
+  background: hsl(128deg 62% 75% / 1%);
+  box-shadow: 0 8px 32px 0 rgba(12, 240, 73, 0.048);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid hsl(128deg 100% 12%);
+}
+.blog-card {
+  padding: 1rem;
 }

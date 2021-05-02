@@ -1,11 +1,7 @@
 .container {
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @media screen and (min-width: 768px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  padding-left: 2rem;
+  padding-right: 2rem;
   @media screen and (min-width: 1284px) {
     width: 90%;
     margin: 0 auto;

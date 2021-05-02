@@ -3,14 +3,28 @@ import SectionHeading from '../SectionHeading';
 
 const Contact = () => {
   return (
-    <section className="container site-section">
+    <section className="container site-section" id="contact">
       <SectionHeading heading="Chat?" subheading="contact" />
-      <div className="mt-8" style={{ maxWidth: 600 }}>
+      <div className="mt-10" style={{ maxWidth: 600 }}>
         <p>
           I would love to connect! If it is for an upcoming project or just want
-          to talk #tech, Feel free to reach out me on{' '}
-          <strong className="underline text-primary">my email</strong> or via{' '}
-          <strong className="underline text-primary">Twitter</strong>
+          to talk #tech, Feel free to reach out me on &nbsp;
+          <a
+            href="mailto:adi.sreyaj@gmail.com"
+            rel="noopener noreferrer"
+            className="font-semibold underline text-primary"
+          >
+            my email&nbsp;
+          </a>
+          or via&nbsp;
+          <a
+            href="https://twitter.com/Adisreyaj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold underline text-primary"
+          >
+            Twitter
+          </a>
         </p>
       </div>
     </section>
