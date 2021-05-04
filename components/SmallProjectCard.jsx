@@ -1,25 +1,27 @@
 import Image from 'next/image';
 import React from 'react';
-
-const ProjectCard = ({ project }) => {
+const SmallProjectCard = ({ project }) => {
   const links = Object.keys(project.links)
     .map((key) => ({ key, value: project.links[key] }))
     .filter((item) => item.value != undefined);
   return (
-    <article className="grid items-center grid-cols-10 gap-2 xl:gap-10 project-card">
-      <div className="relative w-full h-[300px] lg:h-[500px] col-span-10 lg:col-span-5 project-card__image">
+    <article className="flex flex-col p-4 glass-card small-project-card">
+      <div className="relative w-full small-project-card__image h-60">
         <Image
           src={`/images/projects/${project.image}`}
-          className="object-cover lg:object-contain"
+          className="object-cover"
           layout="fill"
         />
       </div>
-      <div className="z-10 col-span-10 p-2 md:p-4 lg:col-span-5 project-card__content">
+      <div className="small-project-card__content">
         <h3 className="mt-4 text-xl font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
           {project.title}
         </h3>
-        <h5 className="mb-1">{project.subtitle}</h5>
-        <div className="flex gap-2 mt-2 mb-4 project-card__links">
+        {/* <h5 className="mb-1 line-clamp-1">{project.subtitle}</h5> */}
+        <div className="mt-2">
+          <p className="text-sm line-clamp-3">{project.description}</p>
+        </div>
+        <div className="flex gap-2 mt-2 mb-4 small-project-card__links">
           {links.map(({ key, value }, index) => {
             return (
               <>
@@ -37,12 +39,9 @@ const ProjectCard = ({ project }) => {
             );
           })}
         </div>
-        <div className="p-4 rounded-md bg-dark-gradient project-card__description">
-          <p className="text-sm line-clamp-3">{project.description}</p>
-        </div>
         <div className="mt-4">
           <h6 className="font-semibold">Powered by</h6>
-          <div className="flex flex-wrap gap-2 mt-1 project-card__tech">
+          <div className="flex flex-wrap gap-2 mt-1 small-project-card__tech">
             {project.technologies.map((tech) => {
               return (
                 <article>
@@ -63,4 +62,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+export default SmallProjectCard;
