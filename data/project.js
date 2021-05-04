@@ -59,7 +59,7 @@ export const PROJECTS = [
     ],
     links: {
       github: 'https://github.com/adisreyaj/cartella-web',
-      website: 'https://cartella.sreyaj.dev/',
+      website: 'https://webitto.sreyaj.dev/pwa-assets-generator',
       npm: null,
     },
     image: 'webitto',
