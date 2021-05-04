@@ -12,20 +12,21 @@ const ProjectCard = ({ project }) => {
           src={`/images/projects/${project.image}`}
           className="object-cover lg:object-contain"
           layout="fill"
+          alt={project.title}
         />
       </div>
       <div className="z-10 col-span-10 p-2 md:p-4 lg:col-span-5 project-card__content">
         <h3 className="mt-4 text-xl font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text">
           {project.title}
         </h3>
-        <h5 className="mb-1">{project.subtitle}</h5>
+        <p className="mb-1">{project.subtitle}</p>
         <div className="flex gap-2 mt-2 mb-4 project-card__links">
           {links.map(({ key, value }, index) => {
             return (
               <>
                 <a
                   className="font-semibold text-primary"
-                  href={project.links[key]}
+                  href={value}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -41,7 +42,7 @@ const ProjectCard = ({ project }) => {
           <p className="text-sm line-clamp-3">{project.description}</p>
         </div>
         <div className="mt-4">
-          <h6 className="font-semibold">Powered by</h6>
+          <p className="font-semibold">Powered by</p>
           <div className="flex flex-wrap gap-2 mt-1 project-card__tech">
             {project.technologies.map((tech) => {
               return (

@@ -11,6 +11,7 @@ const SmallProjectCard = ({ project }) => {
           src={`/images/projects/${project.image}`}
           className="object-cover"
           layout="fill"
+          alt={project.title}
         />
       </div>
       <div className="small-project-card__content">
@@ -27,7 +28,7 @@ const SmallProjectCard = ({ project }) => {
               <>
                 <a
                   className="font-semibold text-primary"
-                  href={project.links[key]}
+                  href={value}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -40,7 +41,7 @@ const SmallProjectCard = ({ project }) => {
           })}
         </div>
         <div className="mt-4">
-          <h6 className="font-semibold">Powered by</h6>
+          <p className="font-semibold">Powered by</p>
           <div className="flex flex-wrap gap-2 mt-1 small-project-card__tech">
             {project.technologies.map((tech) => {
               return (
