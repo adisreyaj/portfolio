@@ -12,9 +12,9 @@ const Header = () => {
   useEffect(() => {
     const mqList = window.matchMedia('(max-width: 1024px)');
     setIsMobile(mqList.matches);
-    mqList.addEventListener('change', handleScreenResChange);
+    mqList.addListener(handleScreenResChange);
     return () => {
-      mqList.removeEventListener('change', handleScreenResChange);
+      mqList.removeListener(handleScreenResChange);
     };
   }, []);
 
