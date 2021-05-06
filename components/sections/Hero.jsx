@@ -22,12 +22,12 @@ const Hero = () => {
           </p>
           <div className="mt-10 xl:mt-16">
             <a
-              href="https://resume.sreyaj.dev"
+              href="https://twitter.com/AdiSreyaj"
               className="button primary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Resume
+              Say Hi
             </a>
           </div>
         </div>
