@@ -9,6 +9,12 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            async
+            defer
+            data-domain="sreyaj.dev"
+            src="https://analytics.sreyaj.dev/js/plausible.js"
+          ></script>
         </body>
       </Html>
     );
