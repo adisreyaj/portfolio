@@ -1,5 +1,6 @@
 import { gql, request } from 'graphql-request';
 import Image from 'next/image';
+import CurrentTrack from '../components/CurrentTrack';
 import About from '../components/sections/About';
 import Blogs from '../components/sections/Blogs';
 import Career from '../components/sections/Career';
@@ -36,6 +37,7 @@ export default function Home({ posts, jobs, projects }) {
         <Blogs posts={posts} />
         <Contact />
       </main>
+      <CurrentTrack />
       <Footer />
     </div>
   );
