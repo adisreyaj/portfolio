@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <footer className="container relative flex flex-col items-center justify-center pt-32 pb-6 overflow-hidden text-white">
+      <footer className="container relative flex flex-col items-center justify-center pt-10 pb-6 overflow-hidden text-white">
         <div className="flex gap-6 mb-8" style={{ maxWidth: 600 }}>
           <a
             aria-label="Github"
