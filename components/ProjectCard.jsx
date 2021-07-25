@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
         <div className="flex gap-2 mt-2 mb-4 project-card__links">
           {links.map(({ key, value }, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <a
                   className="font-semibold text-primary"
                   href={value}
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
                 </a>
 
                 {index !== links.length - 1 && '/'}
-              </>
+              </React.Fragment>
             );
           })}
         </div>
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
           <div className="flex flex-wrap gap-2 mt-1 project-card__tech">
             {project.technologies.map((tech) => {
               return (
-                <article>
+                <article key={tech.name}>
                   <img
                     width="40px"
                     height="40px"
