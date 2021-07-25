@@ -32,7 +32,11 @@ const TalkCard = ({ talk }) => {
         {/* <p className="my-2 text-sm line-clamp-3">{talk.description}</p> */}
         <div className="flex items-center justify-between mt-2">
           <p className="text-xs">{dayjs(talk.date).format('DD MMM YYYY')}</p>
-          <a href={talk.host.link} className="text-xs font-medium text-primary">
+          <a
+            href={talk.host.link}
+            target="_blank"
+            className="text-xs font-medium text-primary"
+          >
             <p className="">{talk.host.name}</p>
           </a>
         </div>
