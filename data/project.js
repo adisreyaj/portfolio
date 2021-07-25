@@ -164,7 +164,7 @@ export const PROJECTS = [
     ],
     links: {
       github: 'https://github.com/adisreyaj/moovee-app',
-      website: '',
+      website: null,
       npm: null,
     },
     image: 'Moovee.jpg',

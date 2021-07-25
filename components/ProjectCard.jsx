@@ -4,7 +4,7 @@ import React from 'react';
 const ProjectCard = ({ project }) => {
   const links = Object.keys(project.links)
     .map((key) => ({ key, value: project.links[key] }))
-    .filter((item) => item.value != undefined);
+    .filter((item) => item.value != null);
   return (
     <article className="grid items-center grid-cols-10 gap-2 xl:gap-10 project-card">
       <div className="relative w-full h-[300px] lg:h-[500px] col-span-10 lg:col-span-5 project-card__image">
