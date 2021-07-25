@@ -74,7 +74,7 @@ const Header = () => {
             />
           </svg>
         </button>
-        <ul className="grid grid-cols-5 gap-10 font-semibold text-white list-none font-heading">
+        <ul className="grid grid-cols-6 gap-10 font-semibold text-white list-none font-heading">
           <li className="text-center uppercase cursor-pointer hover:text-primary">
             <a href="#" onClick={() => closeMenu()}>
               Home
@@ -93,6 +93,11 @@ const Header = () => {
           <li className="text-center uppercase cursor-pointer hover:text-primary">
             <a href="#blog" onClick={() => closeMenu()}>
               Blog
+            </a>
+          </li>
+          <li className="text-center uppercase cursor-pointer hover:text-primary">
+            <a href="#talks" onClick={() => closeMenu()}>
+              Talks
             </a>
           </li>
           <li className="text-center uppercase cursor-pointer hover:text-primary">

@@ -9,10 +9,11 @@ import Footer from '../components/sections/Footer';
 import Header from '../components/sections/Header';
 import Hero from '../components/sections/Hero';
 import Projects from '../components/sections/Projects';
+import Talks from '../components/sections/Talks';
 import Tech from '../components/sections/Tech';
 import { JOBS } from '../data/job';
 import { PROJECTS } from '../data/project';
-
+import { TALKS } from '../data/talks';
 export default function Home({ posts, jobs, projects }) {
   return (
     <div className="pt-5 xl:pt-10">
@@ -35,6 +36,7 @@ export default function Home({ posts, jobs, projects }) {
         <About />
         <Tech />
         <Blogs posts={posts} />
+        <Talks talks={TALKS} />
         <Contact />
       </main>
       <CurrentTrack />
