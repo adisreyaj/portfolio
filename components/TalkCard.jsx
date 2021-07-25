@@ -11,7 +11,7 @@ const linkTitle = {
 const TalkCard = ({ talk }) => {
   return (
     <article className="glass-card">
-      <header className="relative w-full h-40 xl:h-52">
+      <header className="relative w-full h-52 xl:h-52">
         <Image
           src={talk.image}
           className="rounded-md"
@@ -21,7 +21,7 @@ const TalkCard = ({ talk }) => {
         />
       </header>
       <section className="w-full p-2">
-        <a href={talk.links[0].url} target="_blank">
+        <a href={talk.links[0].url} rel="noopener noreferrer" target="_blank">
           <h3
             className="mt-4 font-semibold text-transparent line-clamp-2 bg-primary-gradient bg-clip-text"
             style={{ minHeight: 50 }}
@@ -32,7 +32,12 @@ const TalkCard = ({ talk }) => {
         {/* <p className="my-2 text-sm line-clamp-3">{talk.description}</p> */}
         <div className="flex items-center justify-between mt-2">
           <p className="text-xs">{dayjs(talk.date).format('DD MMM YYYY')}</p>
-          <a href={talk.host.link} className="text-xs font-medium text-primary">
+          <a
+            href={talk.host.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-medium text-primary"
+          >
             <p className="">{talk.host.name}</p>
           </a>
         </div>
@@ -41,7 +46,7 @@ const TalkCard = ({ talk }) => {
             .slice(1, talk.links.length)
             .map(({ type, url }, index) => {
               return (
-                <React.Fragment key={index}>
+                <React.Fragment key={url}>
                   <a
                     className="font-semibold text-primary"
                     href={url}

@@ -74,7 +74,7 @@ const Header = () => {
             />
           </svg>
         </button>
-        <ul className="grid grid-cols-6 gap-10 font-semibold text-white list-none font-heading">
+        <ul className="grid grid-cols-6 gap-6 font-semibold text-white list-none font-heading">
           <li className="text-center uppercase cursor-pointer hover:text-primary">
             <a href="#" onClick={() => closeMenu()}>
               Home

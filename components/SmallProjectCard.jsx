@@ -45,7 +45,7 @@ const SmallProjectCard = ({ project }) => {
           <div className="flex flex-wrap gap-2 mt-1 small-project-card__tech">
             {project.technologies.map((tech) => {
               return (
-                <article>
+                <article key={tech.name}>
                   <img
                     width="40px"
                     height="40px"
