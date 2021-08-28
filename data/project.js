@@ -1,5 +1,44 @@
 export const PROJECTS = [
   {
+    title: 'Compito',
+    subtitle: 'Tasks Done Right',
+    type: 'WEB',
+    description: `A simple and easy-to-use project management application with support for multiple orgs. 
+    Easily manage all your side projects in one place.`,
+    technologies: [
+      {
+        name: 'Angular',
+        icon: 'angular',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      },
+      {
+        name: 'PWA',
+        icon: 'pwa',
+      },
+      {
+        name: 'NGXS',
+        icon: 'ngxs',
+      },
+      {
+        name: 'NestJS',
+        icon: 'nest',
+      },
+      {
+        name: 'Prisma',
+        icon: 'prisma',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/compito',
+      website: 'https://compito.adi.so/',
+      npm: null,
+    },
+    image: 'compito.jpg',
+  },
+  {
     title: 'Cartella',
     subtitle: 'The all in one bookmarking tool for developers',
     type: 'WEB',
