@@ -132,7 +132,8 @@ body {
   }
 }
 
-.project-card,.talk-card {
+.project-card,
+.talk-card {
   &__description {
     background: rgba(0, 20, 19, 0.74);
     box-shadow: 0 8px 32px 0 rgba(12, 240, 73, 0.048);
@@ -144,7 +145,8 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .project-card,.talk-card {
+  .project-card,
+  .talk-card {
     &__image {
       order: 2;
     }
@@ -164,8 +166,7 @@ body {
     &:nth-of-type(2n + 1) {
       .project-card__tech,
       .project-card__links,
-      .talk-card__links,
-       {
+      .talk-card__links {
         @apply justify-end;
       }
       .project-card__image {
@@ -178,4 +179,8 @@ body {
       }
     }
   }
+}
+
+#bmc-wbtn {
+  background: var(--primary-gradient) !important;
 }

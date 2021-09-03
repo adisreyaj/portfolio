@@ -15,6 +15,18 @@ class MyDocument extends Document {
             data-domain="sreyaj.dev"
             src="https://analytics.sreyaj.dev/js/plausible.js"
           ></script>
+          <script
+            data-name="BMC-Widget"
+            data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+            data-id="adisreyaj"
+            data-description="Support me on Buy me a coffee!"
+            data-message=""
+            data-color="#bcf48b"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+          ></script>
         </body>
       </Html>
     );
