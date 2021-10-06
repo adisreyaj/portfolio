@@ -1,27 +1,51 @@
 export const TALKS = [
   {
-    image: '/images/talks/angular-hive-june.jpg',
-    title: 'Beautifully encapsulate table-related logic in a data source.',
-    description:
-      'Separate the code which drives a table like sorting, pagination, filtering, etc from the main component code using the concept of Data source.',
-    host: { name: 'Angular Hive', link: 'https://twitter.com/AngularHive' },
-    date: new Date('2021-06-05'),
+    image: '/images/talks/ng-keralam-sept.jpg',
+    title: 'Custom Form Controls in Angular',
+    description: '',
+    host: { name: 'ng-Keralam', link: 'https://twitter.com/ng_keralam' },
+    date: new Date('2021-09-25'),
     links: [
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=aYD-smtrH3Y',
+        url: 'https://www.youtube.com/watch?v=0DntkG7pNsg',
       },
       {
         type: 'git',
-        url: 'https://github.com/adisreyaj/ng-table-datasource',
+        url: 'https://github.com/adisreyaj/custom-form-controls',
       },
       {
         type: 'slides',
-        url: 'https://docs.google.com/presentation/d/1JgWfRPbMuHsaKvH5qkYCTiU-2FHZ3zs1fnp9BeP7t3g/edit#slide=id.p',
+        url: 'https://slides.com/adisreyaj/custom-form-controls/fullscreen',
       },
       {
         type: 'demo',
-        url: 'https://ng-table-datasource.vercel.app/',
+        url: 'https://custom-form-controls.vercel.app/',
+      },
+    ],
+  },
+  {
+    image: '/images/talks/geeky-ants-july.jpg',
+    title: 'Do more with custom directives in Angular',
+    description: '',
+    host: { name: 'Angular Banglore', link: 'https://twitter.com/angularblr' },
+    date: new Date('2021-07-24'),
+    links: [
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=jRJJkEb7vT0',
+      },
+      {
+        type: 'git',
+        url: 'https://github.com/adisreyaj/ng-directives',
+      },
+      {
+        type: 'slides',
+        url: 'https://slides.com/adisreyaj/you-can-create-a-directive-for-that/fullscreen#/intro',
+      },
+      {
+        type: 'demo',
+        url: 'https://ng-directives.vercel.app/',
       },
     ],
   },
@@ -50,28 +74,30 @@ export const TALKS = [
       },
     ],
   },
+
   {
-    image: '/images/talks/geeky-ants-july.jpg',
-    title: 'Do more with custom directives in Angular',
-    description: '',
-    host: { name: 'Angular Banglore', link: 'https://twitter.com/angularblr' },
-    date: new Date('2021-07-24'),
+    image: '/images/talks/angular-hive-june.jpg',
+    title: 'Beautifully encapsulate table-related logic in a data source.',
+    description:
+      'Separate the code which drives a table like sorting, pagination, filtering, etc from the main component code using the concept of Data source.',
+    host: { name: 'Angular Hive', link: 'https://twitter.com/AngularHive' },
+    date: new Date('2021-06-05'),
     links: [
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=jRJJkEb7vT0',
+        url: 'https://www.youtube.com/watch?v=aYD-smtrH3Y',
       },
       {
         type: 'git',
-        url: 'https://github.com/adisreyaj/ng-directives',
+        url: 'https://github.com/adisreyaj/ng-table-datasource',
       },
       {
         type: 'slides',
-        url: 'https://slides.com/adisreyaj/you-can-create-a-directive-for-that/fullscreen#/intro',
+        url: 'https://docs.google.com/presentation/d/1JgWfRPbMuHsaKvH5qkYCTiU-2FHZ3zs1fnp9BeP7t3g/edit#slide=id.p',
       },
       {
         type: 'demo',
-        url: 'https://ng-directives.vercel.app/',
+        url: 'https://ng-table-datasource.vercel.app/',
       },
     ],
   },
