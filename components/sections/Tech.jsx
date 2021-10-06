@@ -23,7 +23,10 @@ const Tech = () => {
       <div className="grid grid-cols-3 gap-6 mt-8 md:grid-cols-6 lg:grid-cols-9 lg:gap-12">
         {tech.map((item) => {
           return (
-            <article className="glass-card" key={item}>
+            <article
+              className="flex items-center justify-center glass-card"
+              key={item}
+            >
               <img
                 src={`/images/tech-stack/${item}.svg`}
                 alt={item}
