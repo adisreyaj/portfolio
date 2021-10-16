@@ -107,6 +107,24 @@ export const PROJECTS = [
     image: 'Webitto.jpg',
   },
   {
+    title: 'SonarQube Project Status',
+    subtitle: 'VSCode extension to view SonarQube Results',
+    type: 'EXTENSION',
+    description: `An extension to view SonarQube results right inside your favorite IDE - VSCode. No need to switch between the browser and the IDE.`,
+    technologies: [
+      {
+        name: 'TypeScript',
+        icon: 'ts',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/vscode-sonarqube-status',
+      extension:
+        'https://marketplace.visualstudio.com/items?itemName=adisreyaj.sonarqube-status',
+    },
+    image: 'VSCode-Sonarqube-Status.png',
+  },
+  {
     title: 'Angular Remix Icon',
     subtitle: 'Wrapper library for Remix icons.',
     type: 'WEB',
