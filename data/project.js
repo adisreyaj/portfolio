@@ -81,6 +81,29 @@ export const PROJECTS = [
     image: 'cartella.jpg',
   },
   {
+    title: 'MD resume',
+    subtitle:
+      'Create PDF and HTML versions of resume by authoring in Markdown.',
+    type: 'WEB',
+    description: `Write your resume in markdown and easily get the PDF and HTML. Keep your resumes up to date with ease. Write your resume one time and just update as and when needed. Don't go through the hassle of creating a resume every time.`,
+    technologies: [
+      {
+        name: 'TypeScript',
+        icon: 'ts',
+      },
+      {
+        name: 'React',
+        icon: 'react',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/md-resume',
+      demo: 'https://mdresume.adi.so',
+      npm: null,
+    },
+    image: 'MD-Resume.jpg',
+  },
+  {
     title: 'Webitto',
     subtitle: 'A bunch of tools to help you redefine the web.',
     type: 'WEB',
