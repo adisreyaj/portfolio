@@ -1,5 +1,26 @@
 export const TALKS = [
   {
+    image: '/images/talks/angular-nation-oct.jpg',
+    title: 'Tech behind Compito PM application',
+    description: '',
+    host: { name: 'Angular Nation', link: 'https://www.angularnation.net/' },
+    date: new Date('2021-10-05'),
+    links: [
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=qAiDWquojUc',
+      },
+      {
+        type: 'git',
+        url: 'https://github.com/adisreyaj/compito',
+      },
+      {
+        type: 'demo',
+        url: 'https://compito.adi.so/',
+      },
+    ],
+  },
+  {
     image: '/images/talks/ng-keralam-sept.jpg',
     title: 'Custom Form Controls in Angular',
     description: '',
