@@ -1,5 +1,25 @@
 export const TALKS = [
   {
+    image: '/images/talks/angular-nation-nov.jpg',
+    title: 'Tech behind Compito PM application',
+    description: '',
+    host: {
+      name: 'Angular Nation',
+      link: 'https://www.angularnation.net/events/tech-stack-behind-compito-a-simple-project-management-app?instance_index=20211110T140000Z',
+    },
+    date: new Date('2021-11-10'),
+    links: [
+      {
+        type: 'git',
+        url: 'https://github.com/adisreyaj/compito',
+      },
+      {
+        type: 'demo',
+        url: 'https://compito.adi.so/',
+      },
+    ],
+  },
+  {
     image: '/images/talks/angular-nation-oct.jpg',
     title: 'Tech behind Compito PM application',
     description: '',
