@@ -75,6 +75,10 @@ body {
   padding: 1rem;
 }
 
+.gradient-text {
+  @apply text-transparent line-clamp-2 bg-primary-gradient bg-clip-text;
+}
+
 .job-card {
   padding-left: 2rem;
   &:not(:last-of-type) {

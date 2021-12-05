@@ -1,3 +1,5 @@
+import DevSetup from '@/components/sections/DevSetup';
+import { DEV_SETUP } from '@/data/dev-setup';
 import { gql, request } from 'graphql-request';
 import Image from 'next/image';
 import CurrentTrack from '../components/CurrentTrack';
@@ -14,6 +16,7 @@ import Tech from '../components/sections/Tech';
 import { JOBS } from '../data/job';
 import { PROJECTS } from '../data/project';
 import { TALKS } from '../data/talks';
+
 export default function Home({ posts, jobs, projects }) {
   return (
     <div className="pt-5 xl:pt-10">
@@ -37,6 +40,7 @@ export default function Home({ posts, jobs, projects }) {
         <Tech />
         <Blogs posts={posts} />
         <Talks talks={TALKS} />
+        <DevSetup extensions={DEV_SETUP} />
         <Contact />
       </main>
       <CurrentTrack />
