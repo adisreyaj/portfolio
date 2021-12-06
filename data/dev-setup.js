@@ -7,6 +7,14 @@ export const DEV_SETUP = [
     link: 'https://code.visualstudio.com/',
   },
   {
+    name: 'Fig',
+    id: 'fig',
+    type: 'terminal',
+    description:
+      'Fig adds VSCode-style autocomplete to your existing terminal. Move faster with Fig.',
+    link: 'https://fig.io',
+  },
+  {
     name: 'JetBrains Mono',
     id: 'jetbrains-mono',
     type: 'font',
