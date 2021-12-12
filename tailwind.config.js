@@ -1,11 +1,9 @@
 module.exports = {
-  purge: [
+  content: [
     './components/**/*.{js,jsx}',
     './pages/**/*.{js,jsx}',
     './styles/**/*.scss',
   ],
-  mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
