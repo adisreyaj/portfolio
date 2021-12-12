@@ -1,14 +1,23 @@
 export const JOBS = [
   {
-    company: 'Hypersonix',
+    company: 'Traceable',
     from: '2020',
     to: 'Present',
+    designation: 'Software Engineer (UI)',
+    location: 'Bangalore, IN',
+    website: 'https://www.traceable.ai/',
+    logo: 'traceable.svg',
+    role: 'Working with a fantastic team of UI folks to develop and maintain purpose-built UI for the Traceable platform and Hypertrace UI library.',
+  },
+  {
+    company: 'Hypersonix',
+    from: '2020',
+    to: '2021',
     designation: 'Sr.Front-end Engineer',
     location: 'Bangalore, IN',
     website: 'https://hypersonix.ai',
     logo: 'hypersonix.svg',
-    role:
-      'Architect and developing highly scalable components for Hypersonix Web application. Create highly customized views and pages for different use cases which deals with tons of data',
+    role: 'Architect and developing highly scalable components for Hypersonix Web application. Create highly customized views and pages for different use cases which deals with tons of data',
   },
   {
     company: 'Altorum Leren',
@@ -18,7 +27,6 @@ export const JOBS = [
     location: 'Bangalore, IN',
     website: 'https://altorumleren.com',
     logo: 'altorum.svg',
-    role:
-      'Worked as a full-stack web developer and worked on technologies like Angular and Node. Layed foundation of multiple projects within the company like Ticketing System, Annual Maintenance Contract, HR CRM etc.',
+    role: 'Worked as a full-stack web developer and worked on technologies like Angular and Node. Layed foundation of multiple projects within the company like Ticketing System, Annual Maintenance Contract, HR CRM etc.',
   },
 ];
