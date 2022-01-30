@@ -39,6 +39,37 @@ export const PROJECTS = [
     image: 'compito.jpg',
   },
   {
+    title: 'The WFH Store',
+    subtitle: 'Simple e-commerce application',
+    type: 'WEB',
+    description: `Simple e-commerce application built using Angular, NestJS and MongoDB. With feature ring search, and filtering using Mongo Atlas.`,
+    technologies: [
+      {
+        name: 'Angular',
+        icon: 'angular',
+      },
+
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      },
+      {
+        name: 'NestJS',
+        icon: 'nest',
+      },
+      {
+        name: 'Mongo DB',
+        icon: 'mongo',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/wfh',
+      website: 'https://wfh-store.adi.so/',
+      npm: null,
+    },
+    image: 'wfh-store.webp',
+  },
+  {
     title: 'Cartella',
     subtitle: 'The all in one bookmarking tool for developers',
     type: 'WEB',
