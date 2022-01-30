@@ -39,6 +39,32 @@ export const PROJECTS = [
     image: 'compito.jpg',
   },
   {
+    title: 'LibShare',
+    subtitle: 'Curate and Share',
+    type: 'WEB',
+    description: `Libshare helps you curate and share your favorite NPM libraries with the community. Showcase all the awesome libraries that you used in your side project and give them visibility.`,
+    technologies: [
+      {
+        name: 'Angular',
+        icon: 'angular',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      },
+      {
+        name: 'HarperDB',
+        icon: 'harperdb',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/compito',
+      website: 'https://compito.adi.so/',
+      npm: null,
+    },
+    image: 'libshare.webp',
+  },
+  {
     title: 'The WFH Store',
     subtitle: 'Simple e-commerce application',
     type: 'WEB',
