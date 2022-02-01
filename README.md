@@ -4,9 +4,11 @@
   </p>
 
 <h3 align="center">Adithya Sreyaj's Portfolio</h3>
-Presenting my personal portfolio website where I showcase my career, projects, blogs and more.
+Presenting my personal portfolio ✨ website where I showcase my projects 💻, blogs 📰 and more.
 
-I always wanted a portfolio, but wanted something that is different from all the other portfolios out there. One fine day, I got a design idea, just started 
+I always wanted a portfolio, but wanted something that is different 🥳 from all the other portfolios out there. 
+
+One fine day, I got a design idea 💡, and just started 
 working it a created a mock in figma. It turned out great.
 
 Next day, I started building it out.
