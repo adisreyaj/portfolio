@@ -7,15 +7,15 @@ const About = () => {
       <SectionHeading heading="Know Me" subheading="about" />
       <div className="mt-10 xl:text-lg">
         <p className="mb-4">
-          I work as a <strong>Sr.Front-end Engineer</strong> at{' '}
+          I work as a <strong>Software Engineer</strong> at&nbsp;
           <a
-            href="https://hypersonix.ai"
+            href="https://traceable.ai/?ref=adi.so"
             rel="noopener noreferrer"
             target="_blank"
             className="underline text-primary"
-            aria-label="Hypersonix"
+            aria-label="Traceable"
           >
-            <strong>Hypersonix</strong>
+            <strong>Traceable</strong>
           </a>
           &nbsp; where I help build the the leading enterprise AI platform for
           consumer commerce businesses.
