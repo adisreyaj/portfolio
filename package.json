@@ -1,7 +1,16 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "email": "hi@adi.so",
+    "name": "Adithya Sreyaj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adisreyaj/portfolio"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
