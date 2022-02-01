@@ -26,7 +26,9 @@ It's a single page website and is divided into multiple sections.
 
 ## Tech Stack
 
-![Tech Stack](https://cardify.vercel.app/api/badges?border=false&borderColor=%23ddd&borderWidth=2&iconColor=%23000&icons=react%2Cnextdotjs%2Ctailwindcss%2Csass%2Cvercel&preset=young-grass&shadow=true&width=120)
+  <p align="center">
+   <img src="https://cardify.vercel.app/api/badges?border=false&borderColor=%23ddd&borderWidth=2&iconColor=%23000&icons=react%2Cnextdotjs%2Ctailwindcss%2Csass%2Cvercel&preset=young-grass&shadow=true&width=120" alt="Tech Stack">
+  </p>
 
 So it's all **JavaScript** because for a very small project like this it might not make that sense to use TypeScript (I Love TypeScript btw!). 
 And its only me who will work on this one.
