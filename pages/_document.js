@@ -12,7 +12,7 @@ class MyDocument extends Document {
           <script
             async
             defer
-            data-domain="sreyaj.dev"
+            data-domain="adi.so"
             src="https://analytics.sreyaj.dev/js/plausible.js"
           ></script>
           <script
