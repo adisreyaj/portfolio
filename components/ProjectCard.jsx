@@ -38,8 +38,8 @@ const ProjectCard = ({ project }) => {
             );
           })}
         </div>
-        <div className="p-4 rounded-md bg-dark-gradient project-card__description">
-          <p className="text-sm line-clamp-3">{project.description}</p>
+        <div className="">
+          <p className="line-clamp-3">{project.description}</p>
         </div>
         <div className="mt-4">
           <p className="font-semibold">Powered by</p>

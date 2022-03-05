@@ -1,5 +1,36 @@
 export const PROJECTS = [
   {
+    title: 'Flare',
+    subtitle: 'Social network for developers',
+    type: 'WEB',
+    description: `Flare is a new kind of social networking site made especially for software developers.  It's built entirely around the needs and interests of software developers.`,
+    technologies: [
+      {
+        name: 'Angular',
+        icon: 'angular',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      },
+      {
+        name: 'NestJS',
+        icon: 'nest',
+      },
+      {
+        name: 'Prisma',
+        icon: 'prisma',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/flare',
+      website: 'https://flare.adi.so/',
+      blog: 'https://sreyaj.dev/launching-flare-the-twitter-for-developers-we-all-have-been-wanting',
+      npm: null,
+    },
+    image: 'flare.jpeg',
+  },
+  {
     title: 'Compito',
     subtitle: 'Tasks Done Right',
     type: 'WEB',
