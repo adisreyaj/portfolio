@@ -1,7 +1,7 @@
 export const JOBS = [
   {
     company: 'Traceable',
-    from: '2020',
+    from: '2021',
     to: 'Present',
     designation: 'Software Engineer (UI)',
     location: 'Bangalore, IN',
