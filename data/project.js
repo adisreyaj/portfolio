@@ -120,8 +120,8 @@ export const PROJECTS = [
       },
     ],
     links: {
-      github: 'https://github.com/adisreyaj/compito',
-      website: 'https://compito.adi.so/',
+      github: 'https://github.com/adisreyaj/libshare',
+      website: 'https://libshare.adi.so/',
       npm: null,
     },
     image: 'libshare.webp',
