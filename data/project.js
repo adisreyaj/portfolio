@@ -31,6 +31,37 @@ export const PROJECTS = [
     image: 'flare.jpeg',
   },
   {
+    title: 'Show Off',
+    subtitle: 'Showcase your setup',
+    type: 'WEB',
+    description: `Curate the list of gadgets and software and share it with your fans and followers.`,
+    technologies: [
+      {
+        name: 'Angular',
+        icon: 'angular',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      },
+      {
+        name: 'NestJS',
+        icon: 'nest',
+      },
+      {
+        name: 'Prisma',
+        icon: 'prisma',
+      },
+    ],
+    links: {
+      github: 'https://github.com/adisreyaj/show-off',
+      website: 'https://show-off.adi.so/',
+      blog: 'https://sreyaj.dev/show-off-showcase-your-setup-planetscale-hashnode-hackathon',
+      npm: null,
+    },
+    image: 'show-off.jpg',
+  },
+  {
     title: 'Compito',
     subtitle: 'Tasks Done Right',
     type: 'WEB',
