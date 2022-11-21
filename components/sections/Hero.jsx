@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 
 const Hero = () => {
   return (
@@ -31,11 +30,11 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="relative order-1 mb-5 lg:mb-0 lg:order-2 w-60 h-60 lg:w-96 lg:h-96">
+        <div className="relative order-1 mb-5 lg:mb-0 lg:order-2 w-60 h-60 lg:w-96 lg:h-96 lg:-mt-10">
           <Image
-            src="/images/adithya.png"
+            src="/images/adi.JPG"
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
             alt="Adithya Sreyaj"
           />
         </div>
