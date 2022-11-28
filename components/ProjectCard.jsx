@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
       <div className="relative w-full h-[300px] lg:h-[500px] col-span-10 lg:col-span-5 project-card__image">
         <Image
           src={`/images/projects/${project.image}`}
-          className="object-cover lg:object-contain"
+          className="object-contain"
           layout="fill"
           alt={project.title}
         />

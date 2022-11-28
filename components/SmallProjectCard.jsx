@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+
 const SmallProjectCard = ({ project }) => {
   const links = Object.keys(project.links)
     .map((key) => ({ key, value: project.links[key] }))
@@ -7,9 +8,19 @@ const SmallProjectCard = ({ project }) => {
   return (
     <article className="flex flex-col p-4 glass-card small-project-card">
       <div className="relative w-full small-project-card__image h-60">
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            backgroundImage: `url('/images/projects/${project.image}')`,
+            backgroundSize: 'auto',
+            backgroundRepeat: 'no-repeat',
+            filter: 'blur(50px)',
+            opacity: 0.5,
+          }}
+        ></div>
         <Image
           src={`/images/projects/${project.image}`}
-          className="object-cover"
+          className="object-fill"
           layout="fill"
           alt={project.title}
         />

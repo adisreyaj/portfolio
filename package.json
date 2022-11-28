@@ -30,6 +30,7 @@
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "postcss": "^8.2.13",
+    "prettier": "^2.8.0",
     "sass": "^1.32.12",
     "tailwindcss": "^3.0.1"
   }

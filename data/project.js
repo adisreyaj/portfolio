@@ -285,24 +285,6 @@ export const PROJECTS = [
     image: 'Angular-remix-icon.jpg',
   },
   {
-    title: 'NG Shimmer',
-    subtitle: 'Content Placeholder',
-    type: 'WEB',
-    description: `Skeleton loading library. Simple and easy to use Shimmer Animation placeholder for your Angular applications. No extra deps, animations are using pure CSS.`,
-    technologies: [
-      {
-        name: 'Angular',
-        icon: 'angular',
-      },
-    ],
-    links: {
-      github: 'https://github.com/adisreyaj/angular-shimmer-effect',
-      demo: 'https://angular-shimmer-effect.vercel.app/',
-      npm: 'https://www.npmjs.com/package/@sreyaj/ng-shimmer',
-    },
-    image: 'Angular-shimmer.jpg',
-  },
-  {
     title: 'Xpense',
     subtitle: 'Track and manage your expenses the right way',
     type: 'APP',
