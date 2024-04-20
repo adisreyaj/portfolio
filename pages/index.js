@@ -53,24 +53,29 @@ export async function getStaticProps(context) {
   const query = gql`
     query {
       user(username: "adisreyaj") {
-        publication {
-          posts(page: 0) {
-            title
-            coverImage
-            slug
-            cuid
-            totalReactions
-            brief
-            dateUpdated
+        id
+        posts(pageSize: 10, page: 1) {
+          edges {
+            node {
+              title
+              coverImage {
+                url
+              }
+              slug
+              cuid
+              reactionCount
+              brief
+              updatedAt
+            }
           }
         }
       }
     }
   `;
-  const data = await request('https://api.hashnode.com/', query);
+  const data = await request('https://gql.hashnode.com/', query);
   return {
     props: {
-      posts: data.user.publication.posts,
+      posts: (data.user.posts.edges ?? []).map((edge) => edge.node),
       jobs: JOBS,
       projects: PROJECTS,
     },

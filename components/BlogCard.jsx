@@ -7,7 +7,7 @@ const BlogCard = ({ post }) => {
     <article className="glass-card blog-card">
       <header className="relative w-full h-40 xl:h-52">
         <Image
-          src={post.coverImage}
+          src={post.coverImage.url}
           className="rounded-md"
           layout="fill"
           objectFit="cover"
@@ -21,7 +21,7 @@ const BlogCard = ({ post }) => {
           </h3>
         </a>
         <div className="flex gap-4 py-1">
-          <p className="text-xs">{dayjs(post.dateUpdated).format('DD MMM')}</p>
+          <p className="text-xs">{dayjs(post.updatedAt).format('DD MMM')}</p>
           <div className="flex items-center gap-1 text-xs">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const BlogCard = ({ post }) => {
                 fill="#fff"
               />
             </svg>
-            <p>{post.totalReactions}</p>
+            <p>{post.reactionCount}</p>
           </div>
         </div>
         <p className="mt-2 text-sm line-clamp-3">{post.brief}</p>
