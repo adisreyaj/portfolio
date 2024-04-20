@@ -9,7 +9,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script async defer data-domain="adi.so" src="https://analytics.adi.so/js/plausible.js"></script>
+          <script async defer data-domain="adi.so" src="https://analytics.adi.so/js/script.js"></script>
           <script
             data-name="BMC-Widget"
             data-cfasync="false"
