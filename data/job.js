@@ -1,5 +1,15 @@
 export const JOBS = [
   {
+    company: 'Harness',
+    from: '2025',
+    to: 'Present',
+    designation: 'Staff Software Engineer (UI)',
+    location: 'Bangalore, IN',
+    website: 'https://harness.io/?utm_source=adi.so',
+    logo: 'harness.svg',
+    role: 'Working with a fantastic team of UI folks to develop and maintain purpose-built UI for the Traceable platform and Hypertrace UI library.',
+  },
+  {
     company: 'Traceable',
     from: '2021',
     to: 'Present',
